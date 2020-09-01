@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $pd-2 $pd-5;
+   .header__logo{
+       img{
+        width: 50px;
+       }
+   }
+   .header__menu{
+       ul{
+           list-style: none;
+           li{
+               display: inline;
+               margin: 0 $pd-2;
+               a{
+                   text-decoration: none;
+                   @include styleText($color-black-0, $fs-2, $fw-normal);
+                   color: $color-black-0;
+                   transition: all .5s;
+                   &:hover{
+                       color: $color-red-1;
+                   }
+               }
+           }
+       }
+   }
+}
