@@ -1,0 +1,28 @@
+.home__lstPhim{
+    padding: $pd-8 0;
+    .lstPhim__title{
+        h2{
+            @include styleText($color-red-0, $fs-7, $fw-normal);
+            text-align: center;
+        }
+    }
+    .lstPhim__card{
+        .lstPhim__item{
+            padding: $pd-8 $pd-3;
+            img{
+                border-radius: 5px;
+                height: 350px;
+            }
+            .lstPhim__text{
+                h4{
+                    @include styleText($color-black-0, $fs-6, $fw-normal);
+                }
+                i{
+                    font-size: $fs-2;
+                    margin-right: 1px;
+                    color: #ffe045;
+                }
+            }
+        }
+    }
+}

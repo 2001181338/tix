@@ -1,0 +1,24 @@
+.home__carousel{
+    width: 100%;
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel__wrap{
+                    img{
+                        width: 25%;
+                        opacity: 1;
+                        z-index: 999;
+                    }
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .img__background{
+                        position: absolute;
+                        width: 100%;
+                        opacity: .3;
+                    }
+                }
+            }
+        }
+    }
+}

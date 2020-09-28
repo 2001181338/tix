@@ -1,29 +1,69 @@
-.header{
+.header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: $pd-2 $pd-5;
-   .header__logo{
-       img{
-        width: 50px;
-       }
-   }
-   .header__menu{
-       ul{
-           list-style: none;
-           li{
-               display: inline;
-               margin: 0 $pd-2;
-               a{
-                   text-decoration: none;
-                   @include styleText($color-black-0, $fs-2, $fw-normal);
-                   color: $color-black-0;
-                   transition: all .5s;
-                   &:hover{
-                       color: $color-red-1;
-                   }
-               }
-           }
-       }
-   }
+    .header__logo {
+        img {
+            width: 50px;
+        }
+    }
+    .header__menu {
+        ul {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline;
+                margin: 0 $mr-4;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    @include styleText($color-black-0, $fs-3, $fw-normal);
+                    color: $color-black-0;
+                    transition: all 0.5s;
+                    &:hover {
+                        color: $color-red-1;
+                    }
+                }
+                i {
+                    margin-left: $pd-2;
+                    font-size: $fs-5;
+                }
+            }
+        }
+    }
+
+    .header__login {
+        ul {
+            list-style: none;
+            margin: 0;
+            li{
+                display: inline;
+                margin: 0 $mr-4;
+                a {
+                    text-decoration: none;
+                    @include styleText($color-black-0, $fs-3, $fw-normal);
+                    color: $color-black-0;
+                    transition: all 0.5s;
+                    &:hover {
+                        color: $color-red-1;
+                    }
+                    i{
+                        margin-right: $mr-2;
+                        font-size: $fs-5;
+                    }
+                }
+            }
+            li:last-child {
+                border-left: dotted 1px $color-gray-0;
+                padding-left: $fs-3;
+                margin: 0;
+            }
+        }
+    }
 }

@@ -3,6 +3,7 @@ html, body {
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,24 +15,123 @@ html, body {
 }
 
 .header .header__menu ul {
-  list-style: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 .header .header__menu ul li {
   display: inline;
-  margin: 0 11px;
+  margin: 0 20px;
+  text-align: center;
 }
 
 .header .header__menu ul li a {
   text-decoration: none;
   color: #000000;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   color: #000000;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .header .header__menu ul li a:hover {
   color: #FB4226;
+}
+
+.header .header__menu ul li i {
+  margin-left: 11px;
+  font-size: 20px;
+}
+
+.header .header__login ul {
+  list-style: none;
+  margin: 0;
+}
+
+.header .header__login ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.header .header__login ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000000;
+  transition: all 0.5s;
+}
+
+.header .header__login ul li a:hover {
+  color: #FB4226;
+}
+
+.header .header__login ul li a i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.header .header__login ul li:last-child {
+  border-left: dotted 1px #9B9B9B;
+  padding-left: 16px;
+  margin: 0;
+}
+
+.home__carousel {
+  width: 100%;
+}
+
+.home__carousel .carousel .carousel-inner .carousel-item .carousel__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__carousel .carousel .carousel-inner .carousel-item .carousel__wrap img {
+  width: 25%;
+  opacity: 1;
+  z-index: 999;
+}
+
+.home__carousel .carousel .carousel-inner .carousel-item .carousel__wrap .img__background {
+  position: absolute;
+  width: 100%;
+  opacity: .3;
+}
+
+.home__lstPhim {
+  padding: 60px 0;
+}
+
+.home__lstPhim .lstPhim__title h2 {
+  color: #FA5238;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.home__lstPhim .lstPhim__card .lstPhim__item {
+  padding: 60px 15px;
+}
+
+.home__lstPhim .lstPhim__card .lstPhim__item img {
+  border-radius: 5px;
+  height: 350px;
+}
+
+.home__lstPhim .lstPhim__card .lstPhim__item .lstPhim__text h4 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.home__lstPhim .lstPhim__card .lstPhim__item .lstPhim__text i {
+  font-size: 14px;
+  margin-right: 1px;
+  color: #ffe045;
 }
 /*# sourceMappingURL=main.css.map */
