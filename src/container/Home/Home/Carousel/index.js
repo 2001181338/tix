@@ -7,8 +7,8 @@ export default function Carousel() {
     let [dsPhim, setDSPhim] = useState();
 
     useEffect(() => {
-        setDSPhim(getDsPhim);
-    })
+        setDSPhim(getDsPhim)
+    }, [getDsPhim])
     let renderCarousel = () => {
         if (dsPhim) {
             return dsPhim.map((phim, index) => {
@@ -19,45 +19,38 @@ export default function Carousel() {
                                 <NavLink to={`/chitietphim/${phim.maPhim}`}>  <div className="carousel__wrap">
                                     <img className="d-block img__background" src={phim.hinhAnh} alt={index} />
                                     <img className="d-block" src={phim.hinhAnh} alt={index} />
-                                </div></NavLink>
-
+                                </div>
+                                </NavLink>
                             </div>
                         )
                     }
                     return (
                         <div key={index} className="carousel-item">
-                            <div className="carousel__wrap">
-                                <NavLink to={`/chitietphim/${phim.maPhim}`} className="w-100">  <div className="carousel__wrap">
-                                    <img className="d-block img__background" src={phim.hinhAnh} alt={index} />
-                                    <img className="d-block" src={phim.hinhAnh} alt={index} />
-                                </div>
-                                </NavLink>
-
+                            <NavLink to={`/chitietphim/${phim.maPhim}`} className="w-100">  <div className="carousel__wrap">
+                                <img className="d-block img__background" src={phim.hinhAnh} alt={index} />
+                                <img className="d-block" src={phim.hinhAnh} alt={index} />
                             </div>
+                            </NavLink>
                         </div>
                     )
+                }
+                else{
+                    return null
                 }
             })
         }
     }
     return (
         <div className="home__carousel">
-            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-                <ol className="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to={0} />
-                    <li data-target="#carouselExampleIndicators" data-slide-to={1} />
-                    <li data-target="#carouselExampleIndicators" data-slide-to={2} />
-                    <li data-target="#carouselExampleIndicators" data-slide-to={3} />
-                    <li data-target="#carouselExampleIndicators" data-slide-to={4} />
-                </ol>
+            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
                 <div className="carousel-inner">
                     {renderCarousel()}
                 </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true" />
                     <span className="sr-only">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true" />
                     <span className="sr-only">Next</span>
                 </a>

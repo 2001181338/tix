@@ -1,0 +1,57 @@
+.moviesSchedular {
+    background-color: rgb(10, 32, 41);
+    padding: $pd-8 0;
+    .moviesSchedular__content {
+        border-radius: 4px;
+        padding: $pd-6 0;
+        background-color: $color-white-0;
+        .moviesSchedular__wrap {
+            padding: 0 $pd-8;
+            .moviesSchedular__menu {
+                border: rgba(238, 238, 238, 0.88) solid 1px;
+                .moviesSchedular__item {
+                    a {
+                        border: none;
+                        border-bottom: rgba(238, 238, 238, 0.88) solid 1px;
+                        opacity: 0.5;
+                    }
+                    .active {
+                        opacity: 1;
+                    }
+                }
+                .nav {
+                    display: block;
+                    border: none;
+                    .moviesSchedular__item {
+                        text-align: center;
+                        img {
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+            .moviesSchedular__schedular {
+                h2 {
+                    text-align: center;
+                    color: $color-red-0;
+                }
+                .moviesSchedular__time {
+                    justify-content: center;
+                    a {
+                        border: 1px solid #e4e4e4;
+                        margin: 14px;
+                        font-size: 21px;
+                        text-align: center;
+                        background-color: rgba(246, 246, 246, 0.5);
+                        color: #6c6c6c;
+                        border-radius: 7px;
+                        text-decoration: none;
+                        &:hover {
+                            color: $color-red-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

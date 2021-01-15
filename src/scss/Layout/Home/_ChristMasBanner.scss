@@ -1,0 +1,40 @@
+.ChristMasBanner {
+    .ChristMasBanner__contents {
+        background-color: $color-blue-1;
+        padding: 30px 0;
+        .ChristMasBanner__top {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: $color-white-0;
+            i {
+                font-size: 24px;
+            }
+        }
+        .ChristMasBanner__middle {
+            @extend .ChristMasBanner__top;
+            width: 75%;
+            margin: auto;
+            padding: 30px 0;
+            .ChristMasBanner__text {
+                text-align: center;
+                h2 {
+                    @include styleText($color-white-0, 40px, $fw-bold);
+                }
+                p {
+                    @include styleText($color-white-0, 20px, $fw-normal);
+                }
+                a {
+                    @extend %styleButton;
+                }
+            }
+        }
+        .ChristMasBanner__bottom {
+            @extend .ChristMasBanner__top;
+        }
+    }
+    .ChristMasBanner__line {
+        height: 8px;
+        background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+    }
+}

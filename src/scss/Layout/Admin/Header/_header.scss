@@ -1,0 +1,40 @@
+.admin{
+    background-color: $color-black-0;
+    .admin__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $pd-0 $pd-6;
+        background-color: $color-green-4;
+        a{
+            text-decoration: none;
+            @include styleText($color-black-0, 40px, $fw-normal);
+            span{
+                color: $color-white-0;
+            }
+        }
+        p{
+            @include styleText($color-black-0, $fs-5, $fw-normal);
+            margin: 0;
+            span{
+                color: $color-white-0;
+            }
+        }
+    }
+    .admin__menu{
+        padding-top: $pd-4;
+        padding-bottom: $pd-4;
+        a{
+            text-decoration: none;
+            @include styleText($color-gray-7, $fs-3, $fw-normal);
+            i{
+                margin-right: $mr-1;
+                @include styleText($color-white-0, $fs-4, $fw-bold);
+            }
+        }
+    }
+    .admin__content{
+        padding: $pd-4 $pd-3;
+        background-color: #f2f4f8;
+    }
+}

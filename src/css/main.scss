@@ -1,0 +1,24 @@
+// Helpers
+@import '../scss/Helpers/variables';
+@import '../scss/Helpers/mixin';
+
+//Base
+@import '../scss/Base/reset';
+@import '../scss/Base/customize';
+//Layout
+@import '../scss/Layout/Home/header';
+@import '../scss/Layout/Home/carousel';
+@import '../scss/Layout/Home/ListMovies';
+@import '../scss/Layout/Home/ChristMasBanner';
+@import '../scss/Layout/Home/MoviesPopular';
+@import '../scss/Layout/Home/footer';
+@import '../scss/Layout/Home/Detail/moviesDetail';
+@import '../scss/Layout/Home/Detail/moviesSchedular';
+@import '../scss/Layout/Home/BookingTicket/bookingTicket';
+@import '../scss/Layout/Home/SignIn/signIn';
+@import '../scss/Layout/Home/UserInfo/userInfo';
+
+
+//Layout admin
+@import '../scss/Layout/Admin/Header/header';
+@import '../scss/Layout/Admin/QuanLyPhim/moviesManager';

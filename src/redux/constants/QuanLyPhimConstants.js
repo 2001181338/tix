@@ -1,1 +1,4 @@
 export const LAY_DANH_SACH_PHIM = "LAY_DANH_SACH_PHIM";
+export const LAY_THONG_TIN_HE_THONG_RAP = "LAY_THONG_TIN_HE_THONG_RAP";
+export const DANG_NHAP = "DANG_NHAP";
+export const DANG_XUAT = "DANG_XUAT";

@@ -1,0 +1,88 @@
+.moviesDetail {
+    .moviesDetail__background {
+        position: relative;
+        .moviesDetail__img {
+            width: 100%;
+            height: 450px;
+            opacity: 0.1;
+            position: relative;
+            filter: blur(5px);
+        }
+        &:after {
+            background: linear-gradient(to top, rgb(10, 32, 41), transparent 100%);
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+        }
+        .moviesDetail__wrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+            .moviesDetail__card {
+                display: flex;
+                align-items: center;
+                .moviesDetail__video {
+                    position: relative;
+                    img {
+                        border-radius: 4px;
+                        width: 200px;
+                    }
+                    .moviesDetail__play {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover button{
+                            opacity: 1;
+                        }
+                        button{
+                            @include styleText($color-white-0, $fs-3, $fw-normal);
+                            background: transparent;
+                            border: none;
+                            opacity: 0;
+                            transition: all .2s;
+                        }
+                        i {
+                            padding: 25px;
+                            border: solid 2px white;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .moviesDetail__text {
+                    color: $color-white-0;
+                    padding: 0 $pd-6;
+                    width: 450px;
+                    p {
+                        margin: 0;
+                    }
+                    h2 {
+                        @include styleText($color-white-0, 40px, $fw-normal);
+                    }
+                    a {
+                       @extend %styleButton;
+                    }
+                    .moviesDetail__rate {
+                        i {
+                            margin: 0 4px 15px;
+                            color: $color-yellow-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

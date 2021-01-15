@@ -1,0 +1,12 @@
+.moviesPopular {
+    padding: $pd-8 $pd-5;
+    @include styleMovieCard();
+    .homeMovies__card {
+        .homeMovies__item
+        {
+            img{
+                height: 270px;
+            }
+        }
+    }
+}

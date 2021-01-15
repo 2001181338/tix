@@ -4,9 +4,15 @@
     justify-content: space-between;
     align-items: center;
     padding: $pd-2 $pd-5;
-    .header__logo {
-        img {
-            width: 50px;
+    .header__title {
+        h1 {
+            span{
+                color: $color-red-1;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $color-black-0;
         }
     }
     .header__menu {
@@ -23,7 +29,7 @@
                 text-align: center;
                 a {
                     text-decoration: none;
-                    @include styleText($color-black-0, $fs-3, $fw-normal);
+                    @include styleText($color-black-0, $fs-4, $fw-normal);
                     color: $color-black-0;
                     transition: all 0.5s;
                     &:hover {
@@ -39,21 +45,35 @@
     }
 
     .header__login {
+        p{
+            margin: 0;
+            @include styleText($color-black-0, $fs-4, $fw-normal);
+            span{
+                @include styleText($color-red-0, $fs-4, $fw-normal);
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
         ul {
             list-style: none;
             margin: 0;
-            li{
+            li {
                 display: inline;
                 margin: 0 $mr-4;
                 a {
                     text-decoration: none;
-                    @include styleText($color-black-0, $fs-3, $fw-normal);
+                    @include styleText($color-black-0, $fs-4, $fw-normal);
                     color: $color-black-0;
                     transition: all 0.5s;
                     &:hover {
                         color: $color-red-1;
                     }
-                    i{
+                    i {
                         margin-right: $mr-2;
                         font-size: $fs-5;
                     }

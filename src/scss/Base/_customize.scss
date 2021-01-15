@@ -1,0 +1,76 @@
+.slick-slider {
+    height: 100%;
+
+    .slick-prev:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f104";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: black;
+        font-size: 40px;
+    }
+
+    .slick-next:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f105";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: black;
+        font-size: 40px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 45%;
+    }
+}
+
+
+
+.slick-prev {
+    left: -45px;
+}
+
+.slick-next {
+    right: -45px;
+}
+
+.slick-slider .slick-list {
+    height: 100%;
+}
+
+.slick-track {
+    height: 100%;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+
+//GLOBAL
+.movie__title {
+    @include styleText($color-red-0, $fs-7, $fw-normal);
+    text-align: center;
+}
+
+
+.react-datepicker-wrapper {
+    width: 100% !important;
+}
+
+
+//dialog deleted movies
+.react-confirm-alert{
+    .custom-ui{
+        h2{
+            background-color: #ff7272;
+            color: white;
+            padding: 10px 12px;
+        }
+    }
+}

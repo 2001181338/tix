@@ -1,0 +1,9 @@
+.homeMovies {
+    padding-top: $pd-8;
+    @include styleMovieCard();
+    .homeMovies__card{
+        .homeMovies__item{
+            height: 460px;
+        }
+    }
+}

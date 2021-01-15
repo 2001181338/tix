@@ -1,0 +1,25 @@
+.signIn {
+    .signIn__background {
+        background-image: url("../img/dangnhap.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .signIn__wrap {
+            padding: 200px 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            .signIn__content {
+                padding: 40px;
+                background-color: $color-white-0;
+                width: 50%;
+                margin: 0 auto;
+                h1 {
+                    text-align: center;
+                }
+                p{
+                    height: 10px;
+                    margin: 7px 0;
+                }
+            }
+        }
+    }
+}
